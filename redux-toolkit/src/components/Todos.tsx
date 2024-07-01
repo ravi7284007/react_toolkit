@@ -1,12 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { removeTodo, updateTodo } from '../features/todo/todoSlice';
+import { removeTodo } from '../features/todo/todoSlice';
 
 const Todos = () => {
     const todos = useSelector(state => state.todos);
     const dispatch = useDispatch();
-    const updateHandler = () => {
-        console.log('update');
-    }
+ 
   return (
     <div>
         <h2>Todos List</h2>
